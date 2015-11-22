@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ArticleApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style>
+      .heading {
+          background-color: darkgray;
+          width: auto;
+          height: 45px;
+          padding-top: 0.5px;
+      }
+      body {
+          background-color: grey;
+          color: white;
+      }
+      /* unvisited link */
+      a:link {
+          color: red;
+      }
+
+      /* visited link */
+      a:visited {
+          color: green;
+      }
+
+      /* mouse over link */
+      a:hover {
+          color: hotpink;
+      }
+
+      /* selected link */
+      a:active {
+          color: blue;
+      }
+  </style>
+</head>
+<body style="text-align: center;">
+<div class="heading"><h1> Article App </h1></div>
+<%= yield %>
+
+</body>
+</html>
